@@ -2,36 +2,37 @@
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<title></title>
-	<meta name="keywords" content="2ch, トリップ">
-	<meta name="description" content="入力された文字列に対して2chのトリップを生成します。その結果で検索も掛けられます。">
+	<title>成分解析 for JS</title>
+	<meta name="keywords" content="成分解析">
+	<meta name="description" content="成分解析">
 	<link rel="stylesheet" type="text/css" media="screen" href="style.css" charset="UTF-8" />
     <script type="text/javascript" src="jquery-2.1.1.js"></script>
     <script type="text/javascript" src="des.js"></script>
     <script type="text/javascript" src="base64.js"></script>
     <script type="text/javascript" src="encoding.js"></script>
-    <script type="text/javascript" src="decode.js"></script>
-    <script type="text/javascript" src="trip.js"></script>
+    <script type="text/javascript" src="utl.js"></script>
+    <script type="text/javascript" src="buffalin.js"></script>
 </head>
 <body>
 	<div id="main">
-		<div id="header">2chトリップ生成システム</div>
+		<div id="header">成分解析 for JS</div>
 		<div id="discription">
-		入力された文字列から、2chのトリップを生成します。<br />
-		その結果を用いてGoogleで検索してみたりも出来ます。使い方はあなた次第。
+		<p>流行だった成分解析を，<a href="http://ledyba.ddo.jp/2006/03/28034103.php">解析して</a>CのCGIに移植しました．</p>
+		<p> <a href="http://www.tekipaki.jp/~clock/">本家</a>や<a href="http://ledyba.ddo.jp/2006/04/04015951.php">Java版</a>と同じ結果が返ります．</p>
+		<p> 2014年にさらにJSに移植しました。</p>
 		</div>
 		<div id="panel">
 			<div>
 			<form id="form" method="get" action="">
 				<p>
-				トリップキー：#<input type="text" name="t" value="" tabindex="1" accesskey="1" />
-				<input type="submit" value="生成する" tabindex="2" accesskey="2" />
+				<input type="text" name="Thing" value="" tabindex="1" accesskey="1" />
+				<input type="submit" value="解析する" tabindex="2" accesskey="2" />
 				<input type="reset" value="取消" tabindex="3" accesskey="3" />
 				</p>
 			</form>
 			<hr />
 			<div id="result">
-				<p>生成するトリップキーを入力してください。</p>
+				<p>物質名称を入力してください。</p>
 			</div>
 <script type="text/javascript">
 google_ad_client = "pub-3121031347596821";
@@ -50,8 +51,8 @@ pageTracker._initData();
 pageTracker._trackPageview();
 </script>
 		</div>
-		<div id="footer">
-		(C)2011 <A href="http://ledyba.org/">ψ（プサイ）の興味関心空間</a>
+		<div id="footer">Analyzed and written by <a href="http://ledyba.org/">ψ（プサイ）</a>(2006-2014)<br>
+		Original program was written by <a href="http://www.tekipaki.jp/~clock/">Clock</a>(2006)<br>
 		</div>
 	</div>
 </body>
