@@ -2,7 +2,7 @@
 
 (function(){
 	function encode_utf8( s ) {
-	  return unescape( encodeURIComponent( s ) );
+		return unescape( encodeURIComponent( s ) );
 	}
 	function toArray(str) {
 		var array = [];
@@ -24,21 +24,21 @@
 	}
 	function makeTrip(str) {
 		var replaced = (str+"H.").replace(/[^\.-z]/g, ".").replace(/[:;<=>?@\[\\\]^_`]/g, function (m) {
-		    return {
-		        ':': 'A',
-		        ';': 'B',
-		        '<': 'C',
-		        '=': 'D',
-		        '>': 'E',
-		        '?': 'F',
-		        '@': 'G',
-		        '[': 'a',
-		        '\\': 'b',
-		        ']': 'c',
-		        '^': 'd',
-		        '_': 'e',
-		        '`': 'f'
-		    }[m];
+			return {
+				':': 'A',
+				';': 'B',
+				'<': 'C',
+				'=': 'D',
+				'>': 'E',
+				'?': 'F',
+				'@': 'G',
+				'[': 'a',
+				'\\': 'b',
+				']': 'c',
+				'^': 'd',
+				'_': 'e',
+				'`': 'f'
+			}[m];
 		});
 		var key = toSjisArray(replaced).slice(1,3);
 		var pass = toSjisArray(str).slice(0,8);
