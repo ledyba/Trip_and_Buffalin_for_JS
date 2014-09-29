@@ -20,7 +20,7 @@ Trip/成分解析 for JS
 
 以下のURLで稼働中です。
 
- * a
+ * [http://ledyba.org/utl/Buffalin/?Thing=ツンデレ](http://ledyba.org/utl/Buffalin/?Thing=%E3%83%84%E3%83%B3%E3%83%87%E3%83%AC)
 
 ### 原理
 
@@ -33,13 +33,13 @@ Trip/成分解析 for JS
 
 ## 2chトリップ生成システム
 
-2chのトリップを[Wikipediaに書いてあるとおり](http://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AA%E3%83%83%E3%83%97_(%E9%9B%BB%E5%AD%90%E6%8E%B2%E7%A4%BA%E6%9D%BF)に計算するサービスです。とはいえ、実は結構手間が掛かっていて、[JS用にcrypt関数を再実装](https://github.com/ledyba/js-crypt3)しています。
+2chのトリップを<a href="http://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AA%E3%83%83%E3%83%97_(%E9%9B%BB%E5%AD%90%E6%8E%B2%E7%A4%BA%E6%9D%BF">Wikipediaに書いてあるとおり</a>に計算するサービスです。とはいえ、実は結構手間が掛かっていて、[JS用にcrypt関数を再実装](https://github.com/ledyba/js-crypt3)しています。
 
 以前はRubyのCGIで稼働していたのですが、諸事情によりもうCGIはやめたくなったのでJSで書きなおしました。
 
 以下のURLで稼働中です。
 
- * a
+ * [http://ledyba.org/utl/2chTrip/?t=うどん](http://ledyba.org/utl/2chTrip/?t=%E3%81%86%E3%81%A9%E3%82%93)
 
 ライセンス
 ====
