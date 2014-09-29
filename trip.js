@@ -23,8 +23,26 @@
 		return Encoding.convert(array, 'SJIS', 'UTF8');
 	}
 	function makeTrip(str) {
-		var key = toSjisArray(str+"H.").slice(1,3);
-		var trip = Crypt(toSjisArray(str), key);
+		var replaced = (str+"H.").replace(/[^\.-z]/g, ".").replace(/[:;<=>?@\[\\\]^_`]/g, function (m) {
+		    return {
+		        ':': 'A',
+		        ';': 'B',
+		        '<': 'C',
+		        '=': 'D',
+		        '>': 'E',
+		        '?': 'F',
+		        '@': 'G',
+		        '[': 'a',
+		        '\\': 'b',
+		        ']': 'c',
+		        '^': 'd',
+		        '_': 'e',
+		        '`': 'f'
+		    }[m];
+		});
+		var key = toSjisArray(replaced).slice(1,3);
+		var pass = toSjisArray(str).slice(0,8);
+		var trip = Crypt(pass, key);
 		return trip.slice(trip.length-10,trip.length);
 	}
 	function analyze(str){
