@@ -6,11 +6,13 @@
 	<meta name="keywords" content="2ch, トリップ">
 	<meta name="description" content="入力された文字列に対して2chのトリップを生成します。その結果で検索も掛けられます。">
 	<link rel="stylesheet" type="text/css" media="screen" href="style.css" charset="UTF-8" />
+
     <script type="text/javascript" src="jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="des.js"></script>
     <script type="text/javascript" src="base64.js"></script>
     <script type="text/javascript" src="encoding.js"></script>
-    <script type="text/javascript" src="decode.js"></script>
+
+    <script type="text/javascript" src="crypt.js"></script>
+    <script type="text/javascript" src="utl.js"></script>
     <script type="text/javascript" src="trip.js"></script>
 </head>
 <body>
@@ -24,7 +26,7 @@
 			<div>
 			<form id="form" method="get" action="">
 				<p>
-				トリップキー：#<input type="text" name="t" value="" tabindex="1" accesskey="1" />
+				トリップキー：#<input id="input" type="text" name="t" value="" tabindex="1" accesskey="1" />
 				<input type="submit" value="生成する" tabindex="2" accesskey="2" />
 				<input type="reset" value="取消" tabindex="3" accesskey="3" />
 				</p>
@@ -51,9 +53,8 @@ pageTracker._trackPageview();
 </script>
 		</div>
 		<div id="footer">
-		(C)2011 <A href="http://ledyba.org/">ψ（プサイ）の興味関心空間</a>
+		(C)2011-2014 <A href="http://ledyba.org/">ψ（プサイ）の興味関心空間</a>
 		</div>
 	</div>
 </body>
 </html>
-

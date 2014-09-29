@@ -94,13 +94,15 @@
 		return {escaped: str, unescaped: strb};
 	}
 	function handler(str){
-		var array = [];
-		var istr = encode_utf8(str);
-		var mx=istr.length;
-		for(var i=0;i<mx;i++) {
-			array.push(istr.charCodeAt(i));
-		}
-		var sjisArray = Encoding.convert(array, 'SJIS', 'UTF8');  
+		var sjisArray = (function(){
+			var array = [];
+			var istr = encode_utf8(str);
+			var mx=istr.length;
+			for(var i=0;i<mx;i++) {
+				array.push(istr.charCodeAt(i));
+			}
+			return Encoding.convert(array, 'SJIS', 'UTF8');
+		})();;
 		var r = $("#result");
 		var code = getCode(sjisArray);
 		r.empty();
@@ -117,8 +119,8 @@
 		var qs = window.location.search;
 		var vs=decode(qs.substr(1));
 		if ( vs.hasOwnProperty("Thing") && vs.Thing != "" ) {
+			$("#input").val(vs.Thing);
 			handler(vs.Thing);
 		}
 	});
 })();
-
