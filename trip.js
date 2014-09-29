@@ -23,8 +23,7 @@
 		return Encoding.convert(array, 'SJIS', 'UTF8');
 	}
 	function makeTrip(str) {
-		str = str + "H.";
-		var key = toSjisArray(str).slice(1,3);
+		var key = toSjisArray(str+"H.").slice(1,3);
 		var trip = Crypt(toSjisArray(str), key);
 		return trip.slice(trip.length-10,trip.length);
 	}
