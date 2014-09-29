@@ -33,7 +33,7 @@ Trip/成分解析 for JS
 
 ## 2chトリップ生成システム
 
-2chのトリップを<a href="http://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AA%E3%83%83%E3%83%97_(%E9%9B%BB%E5%AD%90%E6%8E%B2%E7%A4%BA%E6%9D%BF">Wikipediaに書いてあるとおり</a>に計算するサービスです。とはいえ、実は結構手間が掛かっていて、[JS用にcrypt関数を再実装](https://github.com/ledyba/js-crypt3)しています。
+2chのトリップを<a href="http://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AA%E3%83%83%E3%83%97_(%E9%9B%BB%E5%AD%90%E6%8E%B2%E7%A4%BA%E6%9D%BF)">Wikipediaに書いてあるとおり</a>に計算するサービスです。とはいえ、実は結構手間が掛かっていて、[JS用にcrypt関数を再実装](https://github.com/ledyba/js-crypt3)しています。
 
 以前はRubyのCGIで稼働していたのですが、諸事情によりもうCGIはやめたくなったのでJSで書きなおしました。
 
