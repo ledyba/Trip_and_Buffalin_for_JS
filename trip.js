@@ -47,8 +47,26 @@
 	}
 	function analyze(str){
 		var r = $("#result");
-		var trip = makeTrip(str);
-		r.text(trip);
+		var trip = (function(){
+			try {
+				return makeTrip(str);
+			} catch (ex){
+				return ex;
+			}
+		})();
+		r.empty();
+		r.append($("<p/>").append("トリップキー「").append($("<span/>").css("color", "green").text("#"+str)).append("」"));
+		r.append($("<p/>").text("を用いてトリップを生成すると、"));
+		r.append($("<p/>").append("トリップ「").append($("<span/>").css("color", "red").text("◆"+trip)).append("」"));
+		r.append($("<p/>").text("になります。"));
+		var url = encodeURI("http://www.google.com/search?q=◆"+trip);
+		r.append(
+			$("<p/>")
+				.append($("<a/>").text("Googleで検索してみる").attr("href", url))
+				.append("（")
+				.append($("<a/>").text("別ウインドウ").attr("href", url).attr("target", "_blank"))
+				.append("）")
+			);
 	}
 	$(document).ready(function(){
 		$("#form")[0].action=window.location.href;
