@@ -22,8 +22,13 @@
 		}
 		return Encoding.convert(array, 'SJIS', 'UTF8');
 	}
+	function toSjisStr(str) {
+	return String.fromCharCode.apply(null, toSjisArray(str));
+	}
 	function makeTrip(str) {
-		var replaced = (str+"H.").replace(/[^\.-z]/g, ".").replace(/[:;<=>?@\[\\\]^_`]/g, function (m) {
+		var replaced = toSjisStr(str+"H.")
+		replaced = replaced.replace(/[^\.-z]/g, ".");
+		replaced = replaced.replace(/[:;<=>?@\[\\\]^_`]/g, function (m) {
 			return {
 				':': 'A',
 				';': 'B',
@@ -67,6 +72,11 @@
 				.append($("<a/>").text("別ウインドウ").attr("href", url).attr("target", "_blank"))
 				.append("）")
 			);
+		$('<input/>')
+			.attr("type", "button")
+			.attr("value", "ツイートする")
+			.on('click', function(){ tweet("トリップ#"+str+"の暗号化結果： ◆"+trip); return false;})
+			.appendTo(r);
 	}
 	$(document).ready(function(){
 		$("#form")[0].action=window.location.href;
