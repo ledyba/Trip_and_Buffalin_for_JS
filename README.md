@@ -10,7 +10,7 @@ Trip/成分解析 for JS
 * アレの半分は何でできてる？――「成分解析」が人気
     * http://www.itmedia.co.jp/news/articles/0604/03/news016.html
 * 「成分解析」解析結果
-    * http://ledyba.org/2006/03/28/03:41:03/
+    * https://7io.org/2006/03/28/03:41:03/
 * 「成分解析」研究室
     * http://www.vb-user.net/junk/analyze/
 * やじうまウォッチ
@@ -20,7 +20,7 @@ Trip/成分解析 for JS
 
 以下のURLで稼働中です。
 
- * [http://ledyba.org/utl/Buffalin/?Thing=ツンデレ](http://ledyba.org/utl/Buffalin/?Thing=%E3%83%84%E3%83%B3%E3%83%87%E3%83%AC)
+ * [https://app.7io.org/Buffalin/?Thing=ツンデレ](http://ledyba.org/utl/Buffalin/?Thing=%E3%83%84%E3%83%B3%E3%83%87%E3%83%AC)
 
 ### 原理
 
@@ -29,7 +29,7 @@ Trip/成分解析 for JS
 詳しくは
 
 * 「成分解析」解析結果
-    * http://ledyba.org/2006/03/28/03:41:03/
+    * https://7io.org/2006/03/28/03:41:03/
 
 ## 2chトリップ生成システム
 
@@ -39,7 +39,7 @@ Trip/成分解析 for JS
 
 以下のURLで稼働中です。
 
- * [http://ledyba.org/utl/2chTrip/?t=うどん](http://ledyba.org/utl/2chTrip/?t=%E3%81%86%E3%81%A9%E3%82%93)
+ * [https://app.7io.org/2chTrip/?t=うどん](http://ledyba.org/utl/2chTrip/?t=%E3%81%86%E3%81%A9%E3%82%93)
 
 ライセンス
 ====
