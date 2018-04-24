@@ -20,7 +20,7 @@ Trip/成分解析 for JS
 
 以下のURLで稼働中です。
 
- * [https://app.7io.org/Buffalin/?Thing=ツンデレ](http://ledyba.org/utl/Buffalin/?Thing=%E3%83%84%E3%83%B3%E3%83%87%E3%83%AC)
+ * [https://app.7io.org/Buffalin/?Thing=ツンデレ](https://app.7io.org/Buffalin/?Thing=%E3%83%84%E3%83%B3%E3%83%87%E3%83%AC)
 
 ### 原理
 
@@ -39,7 +39,7 @@ Trip/成分解析 for JS
 
 以下のURLで稼働中です。
 
- * [https://app.7io.org/2chTrip/?t=うどん](http://ledyba.org/utl/2chTrip/?t=%E3%81%86%E3%81%A9%E3%82%93)
+ * [https://app.7io.org/2chTrip/?t=うどん](https://app.7io.org/2chTrip/?t=%E3%81%86%E3%81%A9%E3%82%93)
 
 ライセンス
 ====
