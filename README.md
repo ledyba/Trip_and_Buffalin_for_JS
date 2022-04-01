@@ -43,4 +43,4 @@ Trip/成分解析 for JS
 
 ライセンス
 ====
-GPL v3 or later
+AGPL v3 or later
